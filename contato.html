@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Bora Viajar</title>
+  <meta name="description" content="Fale com a agência de viagens Bora Viajar e comece a planejar sua próxima viagem.">
+  <link rel="stylesheet" href="style/style.css">
 </head>
-<body class="fundo">
-  <nav class="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="inicio.html">🌍 ExploreNest</a>
-      <div class="navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="inicio.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="destino.html">Destinos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experiencas.html">Experiências</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <div class="hero-section">
-    <div class="hero-content">
-      <h1 class="hero-title">Descubra o Mundo</h1>
-      <p class="hero-subtitle">Explore os destinos mais incríveis do planeta</p>
-      <a href="destino.html" class="btn-hero">Comece a Aventura</a>
-    </div>
-  </div>
+<body>
+  <header class="cabecalho">
+    <nav class="nav-container">
+      <a href="Home.html" class="logo">🧳 Bora<span>Viajar</span></a>
+      <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="container">
-    <section class="features-section">
-      <div class="feature-card">
-        <div class="feature-icon">✈️</div>
-        <h3>Voos Baratos</h3>
-        <p>Encontre as melhores ofertas de passagens aéreas</p>
+  <main>
+    <section class="hero">
+
+      <div class="hero-texto">
+        <h1>Bora planejar sua viagem?</h1>
+        <p>Preencha o formulário com os detalhes da viagem que você imagina, ou fale direto com a gente pelo telefone e
+          redes sociais abaixo.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">🏨</div>
-        <h3>Hospedagens</h3>
-        <p>Acomodações incríveis em qualquer lugar</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🗺️</div>
-        <h3>Roteiros</h3>
-        <p>Roteiros personalizados para sua viagem</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🎒</div>
-        <h3>Dicas</h3>
-        <p>Dicas e segredos dos melhores viajantes</p>
+      <div class="selo-postal">
+        <div class="destino">⏱ Resposta em até 24h</div>
+        <p class="frase">De segunda a sábado.</p>
       </div>
     </section>
-  </div>
 
-  <footer class="footer">
-    <p>&copy; 2026 ExploreNest - Seu companheiro de viagens</p>
+    <div class="rota">FALE COM A GENTE</div>
+    <section class="secao">
+      <div class="duas-colunas">
+        <form class="form-contato" action="#" method="post">
+          <div class="linha-dupla">
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+            </div>
+          </div>
+
+          <div class="linha-dupla">
+            <div class="campo">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+            <div class="campo">
+              <label for="destino">Destino de interesse</label>
+              <select id="destino" name="destino">
+                <option value="">Selecione um destino</option>
+                <option value="jericoacoara">Jericoacoara, CE</option>
+                <option value="chapada-diamantina">Chapada Diamantina, BA</option>
+                <option value="rio-de-janeiro">Rio de Janeiro, RJ</option>
+                <option value="bonito">Bonito, MS</option>
+                <option value="paris">Paris, França</option>
+                <option value="lisboa">Lisboa, Portugal</option>
+                <option value="bariloche">Bariloche, Argentina</option>
+                <option value="nova-york">Nova York, EUA</option>
+                <option value="outro">Outro / ainda não sei</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="viajantes">Número de viajantes</label>
+            <input type="number" id="viajantes" name="viajantes" min="1" placeholder="Ex: 2">
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Conte como imagina sua viagem</label>
+            <textarea id="mensagem" name="mensagem"
+              placeholder="Datas de preferência, orçamento aproximado, tipo de passeio que você curte..."></textarea>
+            <small>Quanto mais detalhes, mais certeiro fica o roteiro que vamos te enviar.</small>
+          </div>
+
+          <button type="submit" class="botao botao-principal">Enviar mensagem</button>
+        </form>
+        <div class="info-contato">
+          <h3>📞 Entre em contato</h3>
+          <div class="item-contato">
+            <strong>Telefone</strong>
+            <a href="tel:+551140028922">(11) 4002-8922</a>
+          </div>
+          <div class="item-contato">
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/5511998894407">(11) 99889-4407</a>
+          </div>
+          <div class="item-contato">
+            <strong>E-mail</strong>
+            <a href="mailto:contato@boraviajar.com.br">contato@boraviajar.com.br</a>
+          </div>
+          <div class="item-contato">
+            <strong>Endereço</strong>
+            <span>Av. Paulista, 1578 — Conjunto 92</span>
+          </div>
+          <div class="item-contato">
+            <strong>Horário de atendimento</strong>
+            <span>Segunda á Segunda, das 7h às 22h</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <h4>🧳 BoraViajar</h4>
+        <p>Agência de viagens feita por gente apaixonada por viajar — e por fazer os outros viajarem também.</p>
+        <div class="redes-sociais">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="Facebook">👍</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="pacotes.html">Pacotes</a></li>
+          <li><a href="depoimentos.html">Depoimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato rápido</h4>
+        <p>📞 (11) 4002-8922</p>
+        <p>✉️ contato@boraviajar.com.br</p>
+        <p>📍 São Paulo, SP</p>
+      </div>
+    </div>
+    <div class="rodape-base">
+      Trabalho acadêmico de Desenvolvimento Web — Agência de viagens fictícia BoraViajar.
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
