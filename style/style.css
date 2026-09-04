@@ -307,7 +307,6 @@ textarea:focus-visible {
     transform: rotate(0deg) translateY(-4px);
 }
 
-/* ==================== FORMULÁRIOS ==================== */
 .duas-colunas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -404,7 +403,6 @@ textarea:focus-visible {
     color: var(--azul-oceano);
 }
 
-/* ==================== NÚMEROS/ESTATÍSTICAS ==================== */
 .faixa-numeros {
     background: linear-gradient(135deg, var(--azul-marinho) 0%, var(--azul-oceano) 100%);
     padding: 2.5rem 1.5rem;
@@ -437,7 +435,6 @@ textarea:focus-visible {
     margin-top: 0.3rem;
 }
 
-/* ==================== CARTÕES DE PACOTES ==================== */
 .cartao-pacote {
     background: var(--branco);
     border: 3px solid var(--azul-marinho);
@@ -528,7 +525,6 @@ textarea:focus-visible {
     margin-bottom: 0.5rem;
 }
 
-/* ==================== RODAPÉ ==================== */
 .rodape {
     background: var(--azul-marinho);
     color: var(--branco);
@@ -579,7 +575,6 @@ textarea:focus-visible {
     font-size: 0.9rem;
 }
 
-/* ==================== SEÇÕES DE CONTEÚDO ==================== */
 .texto-destaque {
     background: var(--papel-creme);
     border-left: 5px solid var(--coral-por-do-sol);
@@ -592,7 +587,6 @@ textarea:focus-visible {
     color: var(--coral-por-do-sol);
 }
 
-/* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
@@ -612,7 +606,6 @@ textarea:focus-visible {
     }
 }
 
-/* ==================== ESTILOS ADICIONAIS PARA HOME ==================== */
 .faixa-destaque {
     background: var(--papel-creme);
     padding: 2rem 1.5rem;
@@ -692,7 +685,6 @@ textarea:focus-visible {
     transform: translateY(-2px);
 }
 
-/* ==================== ESTILOS DO FORMULÁRIO ===================== */
 .linha-dupla {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -736,7 +728,6 @@ textarea:focus-visible {
     flex: 1;
 }
 
-/* ==================== ESTILOS FAQ ==================== */
 .faq-item {
     margin-bottom: 1rem;
     padding: 1.2rem;
@@ -776,7 +767,6 @@ textarea:focus-visible {
     line-height: 1.6;
 }
 
-/* ==================== ESTILOS TIME ===================== */
 .time-grade {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -816,7 +806,6 @@ textarea:focus-visible {
     font-weight: 600;
 }
 
-/* ==================== MELHORIAS RODAPÉ ==================== */
 .rodape-conteudo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -862,7 +851,6 @@ textarea:focus-visible {
     font-size: 0.85rem;
 }
 
-/* ==================== ANIMAÇÕES ==================== */
 @keyframes deslizar {
     from {
         opacity: 0;
@@ -885,7 +873,6 @@ textarea:focus-visible {
 .cartao:nth-child(5) { animation-delay: 0.25s; }
 .cartao:nth-child(6) { animation-delay: 0.3s; }
 
-/* ==================== ESTILOS ADICIONAIS PARA MELHOR VISUAL ==================== */
 button.botao-principal,
 button.botao-secundario,
 button.botao-outline {
@@ -899,7 +886,6 @@ button.botao-principal:active {
     box-shadow: 2px 2px 0 var(--azul-marinho);
 }
 
-/* Melhorias para inputs e textareas */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -926,13 +912,11 @@ select {
     cursor: pointer;
 }
 
-/* Sombras mais suaves em hover */
 .cartao:hover,
 .time-cartao:hover {
     box-shadow: 0 8px 16px rgba(20, 40, 80, 0.15);
 }
 
-/* Melhor visual para links */
 a {
     position: relative;
 }
@@ -942,12 +926,10 @@ a {
     position: relative;
 }
 
-/* Scroll smooth melhorado */
 html {
     scroll-behavior: smooth;
 }
 
-/* Melhor contraste em focos */
 *:focus-visible {
     outline: 3px solid var(--coral-por-do-sol);
     outline-offset: 3px;
